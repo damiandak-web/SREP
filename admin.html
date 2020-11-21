@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Administrador</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js" integrity="sha512-QEiC894KVkN9Tsoi6+mKf8HaCLJvyA6QIRzY5KrfINXYuP9NxdIkRQhGq3BZi0J4I7V5SidGM3XUQ5wFiMDuWg==" crossorigin="anonymous"></script>
+		<link rel="icon" type="image/png" href="img/Logo.png">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+
+	</head>
+	<body>
+
+		<!--wrapper start-->
+		<div class="wrapper">
+			<!--header menu start-->
+			<div class="header">
+				<div class="header-menu">
+					<div class="title">Usuario<span>SREP</span></div>
+					<div class="sidebar-btn">
+						<i class="fas fa-bars"></i>
+					</div>
+					<ul>
+						<li><a href="#"><i class="fas fa-search"></i></a></li>
+						<li><a href="#"><i class="fas fa-bell"></i></a></li>
+						<li><a href="index.html"><i class="fas fa-power-off"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<!--header menu end-->
+			<!--sidebar start-->
+			<div class="sidebar">
+				<div class="sidebar-menu">
+					<center class="profile">
+						<img src="img/1.jpg" alt="">
+						<p>Jessica</p>
+					</center>
+					<li class="item">
+						<a href="#" class="menu-btn">
+							<i class="fas fa-desktop"></i><span>Tablero</span>
+						</a>
+					</li>
+					<li class="item" id="profile">
+						<a href="#profile" class="menu-btn">
+							<i class="fas fa-user-circle"></i><span>Perfil<i class="fas fa-chevron-down drop-down"></i></span>
+						</a>
+						<div class="sub-menu">
+							<a href="#"><i class="fas fa-image"></i><span>últimas Ordenes</span></a>
+						</div>
+					</li>
+					<li class="item" id="messages">
+						<a href="#messages" class="menu-btn">
+							<i class="fas fa-envelope"></i><span>Notificaciones<i class="fas fa-chevron-down drop-down"></i></span>
+						</a>
+						<div class="sub-menu">
+							<a href="#"><i class="fas fa-envelope"></i><span>Deudas Pendientes</span></a>
+							<a href="#"><i class="fas fa-envelope-square"></i><span>Contacto</span></a>
+							<a href="#"><i class="fas fa-exclamation-circle"></i><span>Spam</span></a>
+						</div>
+					</li>
+					<li class="item" id="settings">
+						<a href="#settings" class="menu-btn">
+							<i class="fas fa-cog"></i><span>Ajustes Cuenta<i class="fas fa-chevron-down drop-down"></i></span>
+						</a>
+						<div class="sub-menu">
+							<a href="#"><i class="fas fa-lock"></i><span>Contraseña</span></a>
+							<a href="#"><i class="fas fa-language"></i><span>Lenguaje</span></a>
+						</div>
+					</li>
+					<li class="item">
+						<a href="#" class="menu-btn">
+							<i class="fas fa-info-circle"></i><span>Centro Ayuda</span>
+						</a>
+					</li>
+				</div>
+			</div>
+			<!--sidebar end-->
+			<!--main container start-->
+			<div class="main-container">
+			<div class="container">
+    			<h1 class="text-center">Graficos Dpp</h1>
+    			<hr>
+    				<div class="row">
+        				<div class="col-md-6">
+           			<h2>Bestsellers this month</h2>
+            	<hr>
+           	 <canvas id="graf"></canvas>
+       		 </div>
+            <div class="col-md-6">
+                <h2>Most selled products</h2>
+                <hr>
+     <canvas id="graf1"></canvas>
+            </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Orders placed in the month</h2>
+            <hr>
+            <canvas id="graf3"></canvas>
+        </div>
+        <div class="col-md-6">
+            <h2>Sales of the month</h2>
+            <hr>
+            <canvas id="graf4"></canvas>
+        </div>
+    </div>
+</div>
+			</div>
+			<!--main container end-->
+		</div>
+		<!--wrapper end-->
+
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$(".sidebar-btn").click(function(){
+				$(".wrapper").toggleClass("collapse");
+			});
+		});
+		</script>
+		<script type="text/javascript" src="js/graficos.js"></script>
+		<script src="js/script1.js"></script>
+    	<script src="https://kit.fontawesome.com/f582d76352.js" crossorigin="anonymous"></script>
+
+	</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shipping and payment</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles3.css">
+    <link rel="icon" type="image/png" href="img/Logo.png">
+</head>
+<body>
+ <header role="banner">
+  <div class="main">
+    <nav class="navbar">
+      <div class="brand">
+        <i class="fas fa-wine-bottle"></i>
+        <h3>SREP</h3>
+      </div>
+      <div class="menu">
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quienessomos.html">About us</a></li>
+            <li><a href="contacto.html">Contact us</a></li>
+            <li><a href="ingresar.html">Check In</a></li>
+            <li><a href="entrar.html">Login</a></li>
+        </ul> 
+      </div>
+      <div class="toggle-menu" id="toggle-icon">
+        <i class="fa fa-bars"></i>
+        
+      </div>
+      
+    </nav>
+      <div class="container-info">
+      <div class="main-info">
+        <h1>Buy Your Products</h1>
+        <h2>Best Price Best Quality.</h2>
+        <a href="tienda.html"><button class="btn">BUY!</button></a>
+      </div>
+      <div class="img-content1">
+      <img src="img/canasta1.png">
+      </div>
+      <div class="social-content">
+         <ul>
+          <li><i class="fab fa-facebook-f"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+          <li><i class="fab fa-twitter"></i></li>
+          
+         </ul>
+      </div>
+    </div>    
+  </div>
+
+  <div 
+  class="wave"  
+
+  style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;">
+    
+    </path>
+  </svg>
+</div>  
+
+</header>
+ <section class="eur-products">
+ <center>
+        <div class="container">
+                <h2>Shipping and payment</h2>
+  <form action="pago.html" method="POST" onsubmit="return validar()">
+  <table>
+        <tr>
+         <td> <label form="nombre" class="form-label">Name / Who Receives</label>
+         <input type="text"name="usuario" placeholder="Name" required pattern="[A-Za-z0-9]{5,40}"
+          title="Letters and numbers. Minimum size: 5. Maximum: 40"/></td>
+        </tr>
+    <tr>
+          <td>Direction:<br>
+           <input type="text" id="direccion" class="form-input" pattern="[\w._%-]+@[\#.-]+\.[a-zA-Z]{2,4}$" placeholder="Write your address" required=""></td>
+    </tr>
+    <tr>
+          <td>City:<br>
+           <input type="text" id="ciudad" class="form-input" pattern="[\w._%-]+@[\#.-]+\.[a-zA-Z]{2,4}$" placeholder="Enter city of residence" required=""></td>
+    </tr>
+    <tr>
+            <td>Phone number:<br><input type="number"name="Datos de contacto" placeholder="Telefono"/ minlength="0" maxlength="10" required  pattern="[0-9]+" required=""
+            title="only numbers"></td>
+    </tr>
+     </center>
+    </form>
+  </div>
+</table>      
+<section class="bg-dark btn-container">
+     <p>
+    <button id=""onclick="validar()" class="btn-ghost yellow round" type="submit" onclick="validar_formulario();">Following</button>
+    </p>   
+                     </div>
+            </section>
+</section>
+
+
+
+  <footer>
+    <div class="container-footer-all">
+        
+  
+     <div class="container-body">
+         <div class="colum1">   
+            <h1>Company Information</h1>
+
+             <p>
+                 This company is dedicated to the sale of supermarket products.
+             </p>
+         </div> 
+          <div class="colum2">  
+            <h1>Social Networks</h1>
+            <div class="row"> 
+                <img src="img/facebook.png" >
+                <label>Follow us on Facebook.</label>
+            </div>
+            <div class="row"> 
+                <img src="img/twitter.png" >
+                <label>Follow us on Twitter.</label>
+            </div>
+            <div class="row"> 
+                <img src="img/instagram.png"  >
+                <label>Follow us on Instagram.</label>
+            </div>
+
+          </div>    
+          <div class="colum3">
+            <h1>Contact Information.</h1>
+            <div class="row2">
+                <img src="img/house.png"  >
+                <label>
+                    Door To Door Delivery. 
+                    Autoservicio Exito.
+                    Contact Information.
+                </label>
+            </div>
+
+            <div class="row2">
+                <img src="img/telefo.png" >
+                <label>
+                   +57 311 2222223
+                </label>
+             </div>
+
+                </div>
+              
+          </div>
+
+     </div>
+         
+</div>
+<div class="container-footer">  
+    <div class="footer">
+        
+    
+         <div class="copyright">
+
+      @ 2020 All Rights Reserved.
+             
+         </div>
+         <div class="information">
+             <a href="">Company Information </a>/
+             <a href="">Privacy And Policy </a>/
+             <a href="">Terms and Conditions </a>
+             
+         </div>
+     </div>
+
+</div>  
+    
+ </footer>
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/script1.js"></script>
+  <script src="https://kit.fontawesome.com/f582d76352.js" crossorigin="anonymous"></script>
+  <script type="js/validacion.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+</body>
+</html>
