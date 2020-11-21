@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/styles3.css">
+    <link rel="stylesheet" href="css/forms/form-register.css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/script.js"></script>
     <link rel="icon" type="image/png" href="img/Logo.png">
@@ -56,41 +57,34 @@
 
 </header>
  <section class="eur-products">
-<img src="img/arroz.jpg" class="img-arroz">
- <center>
-        <div class="container">
+<img src="img/arroz.jpg" class="img-arroz" width="600">
+
+
                 <h2>Confirm Product</h2>
   <form action="productos.html" method="POST" onsubmit="return validar()">
-  <table>
-        <tr>
-         <td> <label form="nombre" class="form-label">Product Name</label>
-         <input type="text"name="usuario" placeholder="Name" required pattern="[A-Za-z0-9]{5,40}"
-          title="Product name max 40 characters"/></td>
-        </tr>
-    
-		<td>Category:<br><select name="resgitro">
+
+
+         <label for="nombre" class="form-label">Product Name</label>
+         <input id="nombre" type="text"name="usuario" placeholder="Name" required pattern="[A-Za-z0-9]{5,40}"
+          title="Product name max 40 characters">
+
+             <label for="category">Category: </label>
+            <select id="category" name="resgitro">
      		<option>Dairy</option>
      		<option>Grain</option>
      		<option>...</option>
-     </td>
+            </select>
 
-     <tr>
-       <td><label form="Costo" class="form-label">Costo:</label> 
-            <input class="form-input" id="txtcosto" type="number"  
+
+
+       <label for="Costo" class="form-label">Costo:</label>
+            <input class="form-input" id="Costo" type="number"
             placeholder="Product cost" 
             minlength="0" maxlength="10" required pattern="[0-9]" 
-            title="Only numbers"></td>
-     </tr>  
-     </center>
-    </form>
-  </div>
-</table>      
-<section class="bg-dark btn-container">
-     <p>
-    <button class="btn-ghost yellow round" type="submit" href="productos.html">Continue</button>
-    </p>   
-                     </div>
-            </section>
+            title="Only numbers">
+
+      <button class="btn btn-primary" type="submit">Confirm</button>
+  </form>
 </section>
 
 

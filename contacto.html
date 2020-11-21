@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles3.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/Contact/contact.css">
     <link rel="icon" type="image/png" href="img/Logo.png">
 </head>
 <body>
@@ -60,36 +61,34 @@
     		<div class="form-header">
     			<h1 class="form.title"><span>Contact</span></h1>
     		 </div>
-    		 <label form="nombre" class="form-label">Name:</label>
-    		 <input type="text" id="nombre" class="form-input" placeholder="Write your Name"  required pattern="[A-Za-z]{5,40}" 
-         title="Letras y números. Tamaño mínimo: 5. Maximo: 40">
 
-    		 <label form="nombre" class="form-label">Direction:</label>
-    		 <input type="text" id="Dirección" class="form-input" placeholder="Write your address" required pattern="[\w._%-]+@[\#.-]+\.[a-zA-Z]{2,4}$" placeholder="Write your address without #">
+            <div class="form-product">
+                <label form="nombre" class="form-label">Name:</label>
+                <input type="text" id="nombre" class="form-input" placeholder="Write your Name"  required pattern="[A-Za-z]{5,40}"
+                       title="Letras y números. Tamaño mínimo: 5. Maximo: 40">
+            </div>
 
-    		 <label form="nombre" class="form-label">Email:</label>
-    		 <input type="text" id="email" class="form-input" pattern="[\w._%-]+@[\w.-]+\.[a-zA-Z]{2,4}$" placeholder="Write your email" required="">
+            <div class="form-product">
+                <label form="nombre" class="form-label">Direction:</label>
+                <input type="text" id="Dirección" class="form-input" placeholder="Write your address" required pattern="[\w._%-]+@[\#.-]+\.[a-zA-Z]{2,4}$" placeholder="Write your address without #">
+            </div>
 
-    		 <label form="nombre" class="form-label">Message:</label>
-    		 
-    		 <textarea type="text"id="mensaje"class="form-textarea"placeholder="Write your comment" required=""></textarea>
-    		<section class="bg-dark btn-container">
-         <div class="btn-item">
-          <button class="btn-ghost yellow round" type="submit">Send Comment</button>
-        </div>
-  
-        </section>
+            <div class="form-product">
+                <label form="nombre" class="form-label">Email:</label>
+                <input type="text" id="email" class="form-input" pattern="[\w._%-]+@[\w.-]+\.[a-zA-Z]{2,4}$" placeholder="Write your email" required="">
+            </div>
 
+            <div class="form-product">
+                <label form="nombre" class="form-label">Message:</label>
+            </div>
+
+    		 <div class="form-product">
+                 <textarea type="text"id="mensaje"class="form-textarea"placeholder="Write your comment" required=""></textarea>
+             </div>
+            <button class="btn btn-primary" type="submit">Send</button>
     	</form>
-    	
     </div>
-
 </section>
-
-
-
-
-
 
     <footer>
     <div class="container-footer-all">

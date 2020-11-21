@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    font-size: 62.5%; 
+    font-size: 62.5%;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -16,7 +16,7 @@ img {
 }
 .contenedor {
     width: 95%;
-    max-width: 120rem; 
+    max-width: 120rem;
     margin: 0 auto;
     min-height: (100vh - 100px - 300px)
 }
@@ -96,7 +96,7 @@ h4 {
 
 .site-header {
     background-color: #333333;
-    
+
 }
 .site-header.inicio {
     background-image: url(../img/header.jpg);
@@ -150,7 +150,7 @@ h4 {
 @media (min-width: 440px) {
     .navegacion a {
         display: inline-block;
-        font-size: 1.8rem; 
+        font-size: 1.8rem;
         margin-right: 2rem;
     }
     .navegacion a:last-of-type {
@@ -256,39 +256,18 @@ label {
     text-transform: uppercase;
     display: block;
 }
-input:not([type="submit"]),
-textarea,
-select {
-    padding: 1rem;
-    display: block;
-    width: 100%;
-    background-color: #e1e1e1;
-    margin-bottom: 2rem;
-    border: none;
-    border-radius: 1rem;
-}
-input[type="radio"]{
-    width: auto;
-    margin: 0;
-}
-select {
-    -webkit-appearance: none;
-    appearance: none;
-}
-textarea {
-    height: 20rem;
-}
+
 
 @keyframes cambio {
     0% {margin-left: 0;}
     20% {margin-left: 0;}
-    
+
     25% {margin-left: -100%;}
     45% {margin-left: -100%;}
-    
+
     50% {margin-left: -200%;}
     70% {margin-left: -200%;}
-    
+
     75% {margin-left: -300%;}
     100% {margin-left: -300%;}
 }
@@ -330,9 +309,9 @@ footer{
 .colum2 h1{
     font-size: 22px;
 
-} 
+}
 .row{
-    
+
     display: flex;
 
 }
@@ -374,7 +353,7 @@ footer{
 .container-footer{
     width: 100%;
     background: #101010;
-   
+
 }
 .footer{
      margin: auto;
@@ -399,7 +378,7 @@ footer{
 
 .Salir{
     color: red;
-    
+
 }
 @media screen and (max-width: 450px){
     .container-body{
@@ -412,7 +391,7 @@ footer{
     .colum3{
         margin-top: 40px;
     }
-   
+
 }
 
 
@@ -470,7 +449,7 @@ footer{
     color: #FFFFFF;
     padding: 15px 0;
     cursor: pointer;
-    transition: all .5s ease; 
+    transition: all .5s ease;
 
 }
 

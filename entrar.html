@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Domicilios puerta a puerta</title>
+    <title>Login Username</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles3.css">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/forms/form-register.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/png" href="img/Logo.png">
 
+    <style>
+        input[type='text'],
+        input[type='password'] {
+            width: 90%;
+        }
+    </style>
 </head>
 <body>
 <header role="banner">
@@ -44,7 +50,7 @@
                 </a>
             </div>
             <div class="img-content2">
-                <img src="img/Mercado.png">
+                <img src="img/c.png">
             </div>
         </div>
     </div>
@@ -61,82 +67,28 @@
         </svg>
     </div>
 </header>
-<section class="producs-our">
-    <h2>User Registration</h2>
-    <form method="POST" action="">
+<section class="oour-products">
 
 
-        <div class="form-group">
-            <label form="nombre" class="form-label">Name:</label>
-            <input type="text" class="form-control" id="txtnombre"
-                   placeholder="Name" required pattern="[A-Za-z]{5,40}"
-                   title="Letters. Minimum size: 5. Maximum: 40, without spaces"/>
+    <h2>Login</h2>
+    <form method="POST">
+        <div class="contanier">
+            <div class="form-group">
+                <label form="email" class="form-label">Email:</label>
+                <input type="text" id="txtusuario" class="form-input" required
+                       pattern="[\w._%-]+@[\w.-]+\.[a-zA-Z]{2,4}$" placeholder="Write your email"
+                       title="Enter an email Contain @">
+            </div>
+
+
+            <div class="form-group">
+                <label form="contrasena" class="form-label">Password:</label>
+                <input id="txtcontrasena" type="password" name="passusuario" placeholder="********" required
+                       pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"
+                       title="Letters and numbers. Minimum size: 5. Maximum: 8">
+            </div>
+            <button onclick="validar()" class="btn btn-primary" type="submit">Continue</button>
         </div>
-
-
-        <div class="form-group">
-            <label form="apellido" class="form-label">Surnames:</label>
-            <input class="form-control" id="txtapellido" type="text" name="Apellido" placeholder="Surname" required
-                   pattern="[a-zA-Z]{5,40}"
-                   title="Letters and numbers. Minimum size: 5. Maximum: 40, without spaces">
-        </div>
-
-
-        <div class="form-group">
-            <label form="correo" class="form-label">Email:</label>
-            <input class="form-control" id="txtcorreo" type="text"
-                   required pattern="[\w._%-]+@[\w.-]+\.[a-zA-Z]{2,4}$"
-                   placeholder="Write your email"
-                   title="Must have @ and meet email parameter">
-        </div>
-
-
-        <div class="form-group">
-            <label form="telefono" class="form-label">Telephone:</label>
-            <input class="form-control" id="txttelefono" type="number"
-                   placeholder="Telephone"
-                   minlength="0" maxlength="10" required pattern="[0-9]"
-                   title="only numbers">
-        </div>
-
-
-        <div class="form-group">
-            <label form="direccion" class="form-label">Direction:</label>
-            <input class="form-control" id="txtdireccion" type="text" required
-                   pattern="[\w._%-]+@[\#.-]+\.[a-zA-Z]{2,4}$"
-                   placeholder="Write your address">
-        </div>
-
-
-        <div class="form-group">
-            <label form="contrasena" class="form-label">Create a password:</label>
-            <input id="txtcontrasena" type="password" name="passusuario" placeholder="********" required
-                   pattern="[a-zA-Z]+[0-9]+\{5,8}"
-                   class="form-control"
-                   title="Letters and numbers. Minimum size: 5. Maximum: 8">
-        </div>
-
-
-        <div class="form-group">
-            <label form="contrasena" class="form-label">Confirm Password:</label>
-            <input id="txtcontrasena" type="password" name="passusuario" placeholder="********" required
-                   pattern="[a-zA-Z]+[0-9]+\{5,8}"
-                   class="form-control"
-                   title="It has to be the same password">
-        </div>
-
-
-        <div class="form-group">
-            <label for="">How do you want to register?:</label><select name="resgitero">
-            <option>User</option>
-            <option>Delivery</option>
-        </select>
-        </div>
-
-
-        <button class="btn btn-primary" type="submit">Create user</button>
-
-
     </form>
 </section>
 
@@ -214,17 +166,10 @@
     </div>
 
 </footer>
-
-<!-- <script src="js/validacion.js"></script> -->
 <script src="js/script1.js"></script>
 <script src="https://kit.fontawesome.com/f582d76352.js" crossorigin="anonymous"></script>
+<script type="js/validacion.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </body>
 </html>
-
-
-
-
-
-
